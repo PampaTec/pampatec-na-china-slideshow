@@ -37,6 +37,26 @@
     z-index: 10;
     pointer-events: none;
   }
+
+  .nav-zona {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    z-index: 5;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .nav-zona:hover { opacity: 0.35; }
+  #zonaAnterior {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0.6), rgba(255,255,255,0));
+  }
+  #zonaProxima {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0.6), rgba(255,255,255,0));
+  }
 </style>
 </head>
 <body>
@@ -45,6 +65,9 @@
 
 <div id="stage"></div>
 <div id="contador"></div>
+
+<div id="zonaAnterior" class="nav-zona" title="Anterior"></div>
+<div id="zonaProxima" class="nav-zona" title="Próximo"></div>
 
 <script>
   var ARQUIVOS = [
@@ -141,6 +164,9 @@
     if (e.key === 'ArrowRight') { mostrar(index + 1); }
     else if (e.key === 'ArrowLeft') { mostrar(index - 1); }
   });
+
+  document.getElementById('zonaAnterior').addEventListener('click', function () { mostrar(index - 1); });
+  document.getElementById('zonaProxima').addEventListener('click', function () { mostrar(index + 1); });
 
   mostrar(0);
 </script>
