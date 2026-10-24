@@ -17,7 +17,8 @@ Este repositório publica, via **GitHub Pages**, um slideshow interativo (navega
 ## 🔗 Links
 
 - **Slideshow interativo (GitHub Pages):** https://pampatec.github.io/pampatec-na-china-slideshow/
-- **Vídeo público (download):** https://github.com/PampaTec/pampatec-na-china-slideshow/releases/download/v1.0/PampaTec_na_China.mp4
+- **Vídeo para assistir no navegador (GitHub Pages):** https://pampatec.github.io/pampatec-na-china-slideshow/video.html
+- **Vídeo completo para download (alta qualidade):** https://github.com/PampaTec/pampatec-na-china-slideshow/releases/download/v1.0/PampaTec_na_China.mp4
 - **Página da Release:** https://github.com/PampaTec/pampatec-na-china-slideshow/releases/tag/v1.0
 
 ## 🚀 Publicação
